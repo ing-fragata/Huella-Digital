@@ -1,0 +1,50 @@
+.pag4 {
+scroll-margin-top:6ex;
+}
+.container-pag4 {
+    max-width: 1600px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin-top:15px;
+    padding: 50px;
+}
+
+.container-pag4 h2 {
+    font-size: 50px;
+    color:#ccc;
+    font-weight:lighter;
+}
+
+.container-pag4 h2 span {
+    font-weight: bold;
+    color:#fc5700;
+    font-family: "Gotham-black";
+}
+
+.container-pag4 .fotos-instagram {
+    margin-top:40px;
+    display:flex;
+    align-items: center;
+    
+}
+.container-pag4 .fotos-instagram .instagram{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container-pag4 h3 {
+    margin-top: 25px;
+    font-size:35px;
+    color:#ccc;
+    font-family: "Gotham-black";
+}
+
+.container-pag4 p {
+    margin-top: 25px;
+    font-size:25px;
+    color:#ccc;
+    background-color: #fc5700;
+}

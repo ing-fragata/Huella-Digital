@@ -1,0 +1,82 @@
+.pag1 {
+    scroll-margin-top: 40ex;
+    max-width:1520px;
+}
+
+.container-pag1 {
+    width:92%;
+    margin-top: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    
+}   
+
+.container-pag1 .texto {
+    margin-left: 90px;
+    color:#ccc;
+}
+
+.container-pag1 .texto .logo-pag1{
+    width: 80%;
+}
+
+.container-pag1 .video-pag1 {
+    width: 55%;
+    border-radius:15px;
+}
+
+.container-pag1 .texto p {
+    font-size: clamp(0.5em, 1.7vw, 1.7em);
+}
+
+.container-pag1 .texto .todos, .historia {
+    font-family: "Gotham-black";
+    color: #f5f3f3;
+}
+
+.container-pag1 .texto .todos {
+    margin-left: 21%;
+}
+
+.container-pag1 .texto .historia {
+    margin-left: 14.5%;
+}
+
+
+@media (max-width:889px){
+    .container-pag1 {
+        margin-top: 90px;
+        width:100%;
+        flex-direction:column ;
+        justify-content: center;
+        
+    }
+
+    .container-pag1 .texto {
+        padding: 15px;
+        margin-left: 0px;
+    }
+
+    .container-pag1 .texto .logo-pag1{
+        width: 380px;
+    }
+
+    .container-pag1 .video-pag1 {
+        width: 100%;
+    }
+
+    .container-pag1 .texto p {
+        font-size: 25px;
+    }
+
+    .container-pag1 .texto .todos {
+        margin-left: 85px;
+    }
+    
+    .container-pag1 .texto .historia {
+        margin-left: 51px;
+    }
+}
+

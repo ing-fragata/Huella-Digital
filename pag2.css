@@ -1,0 +1,148 @@
+.pag2 {
+    scroll-margin-top: 15ex;
+}
+.container-pag2 {
+    max-width: 1520px;
+    margin-top:70px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#ccc;
+    padding: 40px;
+}
+
+@media (max-width:889px){
+    .container-pag2 {
+    margin-top:0;
+    }
+
+    .pag2 {
+        scroll-margin-top: 10ex;
+    }
+}
+.texto-pag2 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto-pag2 h3 {
+    font-size: clamp(2.2em, 4vw, 4em);
+}
+.texto-pag2 h3 span {
+    font-weight: bold;
+    font-family: "Gotham-black";
+    color:#fc5700;
+}
+.texto-pag2 p {
+    margin-top:20px;
+    font-size: 25px;
+}
+.container-logos-pag2 {
+    width:100%;
+    padding:40px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(100px, 200px));
+    justify-content:center;
+    gap:25px;
+}
+.container-logos-pag2 a {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+     border:1px solid #fc5700;
+    border-radius:10px;
+    color: #f5f3f3;
+    font-size: 25px;
+    text-align: center;
+}
+.container-logos-pag2 a p {
+    margin-top: 8%;
+}
+.container-logos-pag2 img {
+    width:80%;
+}
+.container-logos-pag2 a p:hover {
+    font-weight: bolder;
+    color:#fc5700;
+}
+
+/* parte 2*/
+
+.container-parte2-pag2 {
+    width:90%;
+    margin-top: 114px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-parte2-pag2 h3 {
+    font-size: clamp(2.2em, 4vw, 4em);
+}
+
+@media (max-width:889px){
+    .container-parte2-pag2 {
+    margin-top:0;
+    }
+}
+.container-parte2-pag2 h3 span{
+    font-family: "Gotham-black";
+    font-weight: bold;
+    color:#fc5700
+}
+
+.container-pag2 .container-parte2-pag2 .logos {
+    display:grid;
+    place-content: center;
+    height: 80vh;
+    width:100%;
+    
+    
+}
+.container-pag2 .container-parte2-pag2 .container-logos2-pag2 {
+    white-space: nowrap;
+    padding: 1px 10px;
+    overflow-y: hidden;
+}
+
+.container-parte2-pag2 .container-logos2-pag2::-webkit-scrollbar {
+    display:none;
+}
+
+.container-parte2-pag2 .container-logos2-pag2 img {
+     width:290px;
+     padding:10px;
+}
+.container-parte2-pag2 .liston {
+    margin-top: 30px;
+    width:110%;
+}
+.container-parte2-pag2 .container-logos3-pag2 {
+    width:95%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+    justify-content:center;
+    gap:15px;
+    align-items: center;
+    
+}
+.container-parte2-pag2 .container-logos3-pag2 h1 {
+    font-family:"Gotham-black";
+    color:#ffffff;
+    font-size:clamp(2.2em, 4vw, 4em);
+    font-weight: bolder;
+}
+.container-parte2-pag2 .container-logos3-pag2 p {
+    color:#ffffff;
+    font-size:clamp(2em, 2.9vw, 2.9em);
+    margin-top:-3.5%;
+}
+.container-parte2-pag2 .container-logos3-pag2 img {
+    width:40%;
+}
+.container-parte2-pag2 .container-logos3-pag2 .logo {
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+}

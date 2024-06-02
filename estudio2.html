@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio 2</title>
+
+<style>
+    body {
+        background-color: aqua;
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    .slider {
+        position: relative;
+        max-width: 1500px;
+        margin:auto;
+        width: 600px;
+        background-color: blue;
+    }
+
+    .contenido {
+        position: absolute;
+        width: 600px;
+        height: 223px;
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+        
+    }
+    .cont {
+        position: absolute;
+        display: flex;
+        
+        
+    }
+
+    .cont img {
+        justify-self: center;
+    }
+
+    .texto {
+        border-left:2px solid #fc5700;
+        margin-right: 5px;
+    }
+
+    .texto p {
+        
+        font-size: clamp(2.1em, 3.5vw, 3.5em);
+        text-align: justify;
+        margin-left: 10px;
+        margin-bottom: 7px;
+        border-bottom:1px solid #fc5700;
+    }
+
+    .texto h3 {
+        margin-left: 10px;
+    }
+
+    input {
+        visibility: hidden;
+        display: none;
+    }
+    
+    .buttons {
+        position: relative;
+        width: 74.5%;
+        display:flex;
+        justify-content: center;
+        gap:10px;
+        z-index: 1;
+        bottom: -210px;
+        margin-left: 75px;
+    }
+
+    .buttons label {
+        width:13px;
+        height:13px;
+        opacity: 0.3;
+        background-color: #fc5700;
+        border-radius:10px;
+        cursor: pointer;
+        z-index:1;
+        transition: 300ms ease-in-out;
+    }
+
+    .buttons label:hover {
+        scale:1.1;
+        opacity:1;
+        background-color: #fc5700;
+    }
+
+    input:nth-child(1):checked ~ .buttons label:nth-child(1),
+    input:nth-child(2):checked ~ .buttons label:nth-child(2),
+    input:nth-child(3):checked ~ .buttons label:nth-child(3),
+    input:nth-child(4):checked ~ .buttons label:nth-child(4) {
+        opacity:1;
+        scroll-margin:1.2;
+    }
+
+    input:nth-child(1):checked ~ .contenido {
+        top: 0;
+    }
+
+    input:nth-child(2):checked ~ .contenido {
+        top: -34.7vh; /* Ajusta el valor según la altura de tu contenido */
+    }   
+
+    input:nth-child(3):checked ~ .contenido {
+        top: -67vh; /* Ajusta el valor según el doble de la altura de tu contenido */
+    }
+
+    input:nth-child(4):checked ~ .contenido {
+        top: -94.8vh; /* Ajusta el valor según el triple de la altura de tu contenido */
+    }
+    
+
+</style>
+
+</head>
+
+
+<body>
+
+    <div class="slider">
+        <input type="radio" name="slider" id="slideOne" checked>
+            <input type="radio" name="slider" id="slideTwo"   >
+            <input type="radio" name="slider" id="slideThree" >
+            <input type="radio" name="slider" id="slideFour"  >
+                     
+            <div class="buttons">
+                <label for="slideOne">  </label>
+                <label for="slideTwo">  </label>
+                <label for="slideThree"></label>
+                <label for="slideFour"> </label>
+            </div>
+        <div class="contenido">
+            <div class="cont">
+                <img class="jorge" src="Videos e imagenes pag3/san jorge.png" alt="san jorge">
+                <div class="texto">
+                    <p>"A Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Impedit odit delectus aspernatur ea nostrum cupiditate unde! 
+                    In, hic earum, obcaecati quo quis exercitationem dignissimos 
+                    natus laudantium veritatis esse, nobis repellat." </p>
+                    <h3><span>PROYECTO:</span> SALSAS MAESTRO</h3>
+                    <h3><span>DIRECTOR:</span>  LUIS URDANETA </h3>
+                </div>
+            </div>
+            <div class="cont">
+                <img class="jorge" src="Videos e imagenes pag3/san jorge.png" alt="san jorge">
+                <div class="texto">
+                    <p>"B Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Impedit odit delectus aspernatur ea nostrum cupiditate unde! 
+                    In, hic earum, obcaecati quo quis exercitationem dignissimos 
+                    natus laudantium veritatis esse, nobis repellat." </p>
+                    <h3><span>PROYECTO:</span> SALSAS MAESTRO</h3>
+                    <h3><span>DIRECTOR:</span>  LUIS URDANETA </h3>
+                </div>
+            </div>
+            <div class="cont">
+                <img class="jorge" src="Videos e imagenes pag3/san jorge.png" alt="san jorge">
+                <div class="texto">
+                    <p>"C Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Impedit odit delectus aspernatur ea nostrum cupiditate unde! 
+                    In, hic earum, obcaecati quo quis exercitationem dignissimos 
+                    natus laudantium veritatis esse, nobis repellat." </p>
+                    <h3><span>PROYECTO:</span> SALSAS MAESTRO</h3>
+                    <h3><span>DIRECTOR:</span>  LUIS URDANETA </h3>
+                </div>
+            </div>
+            <div class="cont">
+                <img class="jorge" src="Videos e imagenes pag3/san jorge.png" alt="san jorge">
+                <div class="texto">
+                    <p>"D Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Impedit odit delectus aspernatur ea nostrum cupiditate unde! 
+                    In, hic earum, obcaecati quo quis exercitationem dignissimos 
+                    natus laudantium veritatis esse, nobis repellat." </p>
+                    <h3><span>PROYECTO:</span> SALSAS MAESTRO</h3>
+                    <h3><span>DIRECTOR:</span>  LUIS URDANETA </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

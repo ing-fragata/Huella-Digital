@@ -1,0 +1,180 @@
+
+.container-header-audiovisual {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+}
+.container-header-audiovisual img {
+   width:250px;
+}
+.container-header-audiovisual nav ul {
+    border:1px solid #bc602e;
+    border-radius:20px;
+    padding: 5px;
+    display:grid;
+    grid-template-columns:repeat(4, 140px);
+    align-content: center;
+    justify-items: center;
+}
+.container-header-audiovisual nav ul li a{
+    font-family: "Gotham-light";
+    color:#f5f3f3;
+    font-size:20px;
+}
+.container-header-audiovisual nav ul li a:hover{
+    color: #fc5700;
+    font-weight: bold;
+}
+@media (max-width:889px){
+    .container-header-audiovisual {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-header-audiovisual .link-logo {
+        margin-bottom: 6px;
+    }
+    
+    .container-header-audiovisual nav ul li a{
+        font-size: clamp(1em, 1.4vw, 1.4em)
+    }
+    
+}
+@media (max-width:595px) {
+    .container-header-audiovisual nav ul{
+        grid-template-columns:repeat(4, 80px);
+    }
+
+    .container-header-audiovisual img {
+        width:200px;
+     }
+
+     .container-header-audiovisual .link-logo {
+        margin-bottom: 3px;
+    }
+}
+@media (max-width:344px) {
+    .container-header-audiovisual nav ul{
+        grid-template-columns: 150px;
+        border: none;
+        padding:0;   
+    }
+
+    .container-header-audiovisual nav ul li {
+        border:1px solid #fc5700;
+        border-radius:15px;
+        padding:3px 10px;
+        margin-top: 3px;
+    }   
+}
+
+.container-audiovisual {
+    max-width: 1600px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    font-family:"Gotham-light";
+    color:#f5f3f3;
+}
+
+.container-audiovisual .container-imagenes {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 3% 150px;
+    
+}
+
+.container-audiovisual .container-imagenes .container-gif {
+    display:flex;
+    flex-direction:column;
+}
+
+.container-audiovisual .container-imagenes .container-gif .camara {
+    width:clamp(100px, 0px,150px) ;
+}
+
+.container-audiovisual .container-imagenes .container-gif p {
+    font-size: clamp(1em, 1.55vw, 1.55em);
+}
+
+.container-audiovisual .container-imagenes .container-gif h1 {
+    font-family:"Gotham-black";
+    font-size: clamp(1.3em, 3vw, 3.5em);
+}
+
+.container-audiovisual .container-imagenes .container-gif .by {
+    font-family:"Gotham-black";
+}
+
+.container-audiovisual .container-imagenes .container-gif .logo {
+    max-width:clamp(150px, 85%, 450px);
+} 
+
+.container-audiovisual .container-imagenes .video {
+    width:clamp(600px, 65%, 700px);
+    border-radius:15px;
+}
+
+@media(max-width:1100px) {
+    .container-imagenes {
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-audiovisual .container-imagenes .video {
+        width:clamp(500px, 95%, 900px);
+        align-items: end;
+        margin-top:20px;
+    }
+}
+
+.container-audiovisual .generamos {
+    margin-top: 10px;
+    width: 80%;
+    text-align: justify;
+    font-size: clamp(1em, 1.6vw, 1.6em);
+}
+
+.container-audiovisual h2 {
+    font-family:"Gotham-black";
+    font-size: clamp(2em, 4vw, 4em);
+    padding:40px;
+}
+
+.container-audiovisual .container-servicios {
+    width:90%;
+    font-size: clamp(1em, 1.3vw, 1.3em) ;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    place-content:center;
+    gap:15px;
+}
+
+.container-audiovisual .container-servicios p {
+    border:1px solid #fc5700;
+    border-radius: 200px;
+    padding: 10px 30px;
+    place-self:center;
+}
+
+.container-footer {
+    margin-top: 50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 20px;
+}
+
+.container-footer img {
+    width:clamp(50px, 200px, 200px);
+    margin-bottom: 10px;
+}
+
+.container-footer p {
+    font-family:"Gotham-light";
+    color:#f5f3f3;
+    font-size: clamp(0.7em, 1vw, 1em);
+}
+

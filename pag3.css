@@ -1,0 +1,139 @@
+.pag3 {
+    scroll-margin-top: 10ex;
+}
+
+.container-pag3 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#ccc;
+}
+.container-pag3 h3 {
+    font-size: clamp(2.1em, 3.5vw, 3.5em);
+    font-weight: lighter;
+}
+
+.container-pag3 h3 span {
+    color:#fc5700;
+    font-family: "Gotham-black";
+}
+.container-pag3 .liston {
+    margin-top:30px;
+    width: 100%;
+}
+.container-pag3 .esto {
+    margin-top: 50px;
+    
+}
+.contenido {
+    position: relative;
+    max-width: 1520px;
+    width: 710px;
+    height: 320px;
+    margin:auto;
+    overflow: hidden;
+    
+    
+}
+
+.contenido .prueba {
+    position: absolute;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4, 650px);
+    height: 210px;
+    transition: 400ms ease-in-out;
+    margin-top: 50px;
+}
+
+.contenido .cont {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 400px));
+    grid-template-rows: 170px;
+    text-align: justify;
+    width: 100%;
+}
+
+.contenido .cont img {
+    width:190px;
+    place-self: center;
+}
+.contenido .cont .texto {
+    align-self:center ;
+    border-left:2px solid #fc5700;
+    color:#ccc;
+}
+
+.contenido .cont .texto p{
+    font-size: 18px;
+    border-bottom:1px solid #fc5700;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.contenido .cont .texto h3{
+    font-size: 15px;
+    margin-left: 10px;
+    
+    
+}
+
+.contenido .cont .texto h3 span {
+    font-family: "Gotham-black";
+}
+
+.contenido input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.contenido input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.contenido input:nth-child(3):checked ~ .buttons label:nth-child(3),
+.contenido input:nth-child(4):checked ~ .buttons label:nth-child(4) {
+opacity:1;
+scroll-margin:1.2;
+}
+
+.contenido input {
+    display: none;
+    visibility: hidden;
+}
+
+.contenido .buttons {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    gap: 10px;
+    margin-top: 290px;
+    margin-left: 320px;
+}
+
+.contenido .buttons label {
+    width:13px;
+    height:13px;
+    opacity: 0.3;
+    background-color: #fc5700;
+    border-radius:10px;
+    cursor: pointer;
+    z-index:1;
+    transition: 300ms ease-in-out;
+}
+
+.contenido .buttons label:hover {
+    scale:1.1;
+    opacity:1;
+    background-color: #fc5700;
+}
+
+.contenido input:nth-child(1):checked ~ .prueba {
+    left:0;
+}
+
+.contenido input:nth-child(2):checked ~ .prueba {
+    left:-650px;
+}
+
+.contenido input:nth-child(3):checked ~ .prueba {
+    left:-1300px;
+}
+
+.contenido input:nth-child(4):checked ~ .prueba {
+    left:-1950px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Slider con HTML y CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    
+<style>    
+    
+    body {
+        background-color: lightgrey;
+    }
+    
+    #kiko-slider {
+        font-family: sans-serif;
+        margin: auto;
+        background-color: white;
+        max-width: 800px;
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    #kiko-slider>ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    #kiko-slider>ul.slider {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        height: 300px;
+    }
+    
+    #kiko-slider>ul.slider h1 {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        left: 50%;
+        top: 100px;
+        transform: translate(-50%, -50%);
+    }
+    
+    #kiko-slider>ul.slider li {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+        background: #fff;
+    }
+    
+    #kiko-slider>ul.slider li img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    #kiko-slider>ul.slider li:first-child {
+        opacity: 1;
+        /*Mostramos el primer <li>*/
+    }
+    
+    #kiko-slider>ul.slider li:target {
+        opacity: 1;
+        /*Mostramos el <li> del enlace que pulsemos*/
+    }
+    
+    #kiko-slider>.menu {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #kiko-slider>.menu li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #kiko-slider>.menu li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        border-radius: 100%;
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="kiko-slider">
+
+        <ul class="slider">
+            <li id="slide1">
+                <h1>Hola Programadores</h1>
+                <img src="./img/car.jpg" />
+            </li>
+            <li id="slide2">
+                <img src="./img/sunset.jpg" />
+            </li>
+            <li id="slide3">
+                <h1>Ejemplo con otros elementos</h1>
+                <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el
+                    slider</p>
+                <a href="https://kikopalomares.com/" target="_blank">¡Corre a mi web para más contenido!</a>
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li>
+                <a href="#slide1">1</a>
+            </li>
+            <li>
+                <a href="#slide2">2</a>
+            </li>
+            <li>
+                <a href="#slide3">3</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div style="display: none;">
+        <a href="https://kikopalomares.com/" target="_blank">Powered by Kiko Palomares</a>
+    </div>
+
+</body>
+
+</html>

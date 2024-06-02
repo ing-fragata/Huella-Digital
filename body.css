@@ -1,0 +1,23 @@
+
+body {
+    background-color: rgb(36, 33, 33);
+    font-family: "Gotham-light", "Gotham-black", sans-serif;
+}
+@font-face {
+    font-family:"Gotham-light";
+    src: url(Fuente/Gotham-Light.woff) format("woff");
+}
+@font-face {
+    font-family:"Gotham-black";
+    src: url(Fuente/Gotham-Bold.woff) format("woff");
+}
+* {  
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   text-decoration:none;
+   list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
